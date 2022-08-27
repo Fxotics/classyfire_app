@@ -1,0 +1,6 @@
+O=C1N2[C@H]3C(=C[C@@H](OC(=O)C)[C@H](OC(=O)C)[C@@H]3c4c1cc5OCOc5c4)CC2
+O1c2c(OC1)cc3c(c4c5N(C3)CCc5ccc4)c2 619567
+O1c2c(OC1)cc3c(c2)[C@@H]4[C@H](O)[C@@H](O)C=C5[C@H]4N(C3)CC5 72378
+O=C1N2[C@@H]3C(=C[C@H](O)[C@@H](O)[C@H]3c4c1cc5OCOc5c4)CC2
+O=C(O[C@H]1C=C2[C@H]3N(Cc4c(cc5OCOc5c4)[C@@H]3[C@@H]1OC(=O)C)CC2)C
+O=C(O[C@H]1C=C2[C@H]3N(Cc4c(cc5OCOc5c4)[C@@H]3[C@@H]1OC(=O)c6ccccc6)CC2)c7ccccc7
