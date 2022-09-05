@@ -23,7 +23,7 @@ begin
   DESTINATION_EMAIL = ""
 rescue Exception => e
   puts "Exception encountered: #{e}"
-  puts "Please provide an authorized sending G-mail user:"
+  puts "Please provide a G-mail user authorized with SMTP authentication:"
   EMAIL_ADDRESS = STDIN.gets.chomp!
   puts "Password:"
   EMAIL_PASS = STDIN.noecho(&:gets).chomp!
@@ -100,7 +100,7 @@ module ClassyFire_Submits
     if cntinue.downcase == 'n'
       abort('Please try again when you are ready. Thank you for using this app! ')
     end
-    exec("python lib/TSV_smiles_converter.py -f #{input}")
+    system "python lib/TSV_smiles_converter.py -f #{input}"
 
     if RUBY_PLATFORM.include? 'mingw'
       input.gsub!(/\\/,File::SEPARATOR)
