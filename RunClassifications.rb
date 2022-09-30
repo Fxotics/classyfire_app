@@ -33,6 +33,7 @@ rescue Exception => e
   if DESTINATION_EMAIL == ''
     DESTINATION_EMAIL.replace EMAIL_ADDRESS
     puts "Will send to #{DESTINATION_EMAIL}"
+    sleep 1
   end
 
 end

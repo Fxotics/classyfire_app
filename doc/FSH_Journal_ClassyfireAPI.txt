@@ -27,6 +27,7 @@ Likewise, ClassyFire API is accessible at: https://bitbucket.org/wishartlab/clas
 	REQUIREMENTS
 		- Ruby >2.7.0 (Linux: sudo apt install ruby)
 			-> gem package manager
+			-> bundler (gem install bundler)
 			-> rest-client gem v 2.1.0 (Linux: sudo gem install rest-client -v 2.1.0) **this one is problematic often
 				- 'gem install ffi'
 				- may require to install Ruby+DevKit (MSYS2) for Windows (or standalone DevKit to add)

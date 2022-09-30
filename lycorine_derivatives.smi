@@ -1,6 +1,6 @@
-O=C1N2[C@H]3C(=C[C@@H](OC(=O)C)[C@H](OC(=O)C)[C@@H]3c4c1cc5OCOc5c4)CC2
-O1c2c(OC1)cc3c(c4c5N(C3)CCc5ccc4)c2 619567
-O1c2c(OC1)cc3c(c2)[C@@H]4[C@H](O)[C@@H](O)C=C5[C@H]4N(C3)CC5 72378
-O=C1N2[C@@H]3C(=C[C@H](O)[C@@H](O)[C@H]3c4c1cc5OCOc5c4)CC2
-O=C(O[C@H]1C=C2[C@H]3N(Cc4c(cc5OCOc5c4)[C@@H]3[C@@H]1OC(=O)C)CC2)C
-O=C(O[C@H]1C=C2[C@H]3N(Cc4c(cc5OCOc5c4)[C@@H]3[C@@H]1OC(=O)c6ccccc6)CC2)c7ccccc7
+CC(=O)O[C@@H]1C=C2CCN3C(=O)c4cc5c(cc4[C@@H]([C@H]1OC(C)=O)[C@H]23)OCO5
+c1cc2c3c(c1)-c1cc4c(cc1CN3CC2)OCO4
+O[C@H]1C=C2CCN3Cc4cc5c(cc4[C@H]([C@@H]1O)[C@@H]23)OCO5
+O=C1c2cc3c(cc2[C@@H]2[C@H](O)[C@@H](O)C=C4CCN1[C@H]42)OCO3
+CC(=O)O[C@H]1C=C2CCN3Cc4cc5c(cc4[C@H]([C@@H]1OC(C)=O)[C@@H]23)OCO5
+O=C(O[C@H]1C=C2CCN3Cc4cc5c(cc4[C@H]([C@@H]1OC(=O)c1ccccc1)[C@@H]23)OCO5)c1ccccc1

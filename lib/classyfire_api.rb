@@ -346,22 +346,30 @@ File.open(logsfile,"w") {|f| f.write "Time\tErrorMessage\tGroup\tSMILES\n"}
     puts h.keys.uniq.length
     if h.keys.length > 0
       i = 1
+      puts "--- #{((i.to_f-1)/h.keys.uniq.length.to_f*100).round(2)}% complete...\n\n"         ### MY MODIFICATION ATT. FXOTICS
       h.keys.uniq[0..-1].each do |key|
         puts i
+        r = 0
 
         puts "#{key} :: #{h[key]}"
         begin
-          qs = submit_query(key,h[key])
+          qs = submit_query(key,h[key].to_str)
       	  sleep(5) 																				### MY MODIFICATION ATT. FXOTICS
-
+          
           qs_decoded = JSON.parse(qs)
           qr = JSON.parse(get_query(qs_decoded["id"],format="json"))
+          puts "--- #{((i.to_f)/h.keys.uniq.length.to_f*100).round(2)}% complete...\n\n"         ### MY MODIFICATION ATT. FXOTICS
 
           res += qr["entities"][0].to_json
           res += ","
           i += 1
         rescue Exception => e
-          e.message
+          puts "Error encountered: #{e.message}"           ### MY MODIFICATION ATT. FXOTICS
+          if r < 5                                         ###
+            r += 1                                         ###
+            puts "#{r} - Retrying... \n"                   ###
+            retry                                          ###
+          end
         end
 
       end
